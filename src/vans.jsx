@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-export default function vans() {
+export default function Vans() {
     return (
        <h1>vans page goes here</h1> 
     )
