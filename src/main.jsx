@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Home from "./home"
 import About from "./about"
+import Vans from "./vans"
 import "./server"  
-import vans from "./vans"
+
 
 
 function App() {
@@ -14,11 +15,11 @@ function App() {
         <Link className="site-logo" to="/">#VanLife</Link>
         <nav>
           <Link to="/about">About</Link>
-          <Link to="/vans">vans</Link>
+          <Link to="/vans">Vans</Link>
         </nav>
       </header>
       <Routes>
-        <Route path='/vans' element={<vans />}/>
+        <Route path='/vans' element={<Vans />}/>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
