@@ -19,14 +19,18 @@ function App() {
      
       <Routes>
         <Route element={<Layout />}>
-        <Route path='/vans' element={<Vans />}/>
+        <Route path="vans">
+        <Route index element={<Vans />}/>
         <Route path='/vans/:id' element={<Vandetail />}/>
+        </Route>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path='/host' element={<HostLayout />}>
-        <Route path='/host/Income' element={<Income />} />
-        <Route path='/host/reviews' element={<Reviews/>} />
+        <Route index element={<Dashboard />} />
+        <Route path='Income' element={<Income />} />
+        <Route path='reviews' element={<Reviews/>} />
         </Route>
+
         </Route>
       </Routes>
     </BrowserRouter>
