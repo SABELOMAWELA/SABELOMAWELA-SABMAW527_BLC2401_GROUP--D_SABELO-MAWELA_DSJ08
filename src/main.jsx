@@ -15,6 +15,7 @@ function App() {
      
       <Routes>
         <Route element={<Layout />}>
+          {/* <Route path='./components/host' element={<Host />} /> */}
         <Route path='/vans' element={<Vans />}/>
         <Route path='/vans/:id' element={<Vandetail />}/>
         <Route path="/" element={<Home />} />

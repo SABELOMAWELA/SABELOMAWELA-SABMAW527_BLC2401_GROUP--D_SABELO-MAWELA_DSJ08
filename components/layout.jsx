@@ -9,7 +9,7 @@ export default function Layout() {
         <>
         <Header />
         <Outlet />
-        <h1>This is the Layout Route</h1>
+        
         
         </>
         
