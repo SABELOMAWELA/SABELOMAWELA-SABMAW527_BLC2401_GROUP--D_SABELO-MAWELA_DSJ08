@@ -11,6 +11,8 @@ import Dashboard from './Host/dashboard';
 import Income from './Host/Income';
 import Reviews from './Host/Reviews';
 import { HostLayout } from './Host/HostLayout';
+import Hostvans from './Host/vans';
+import Hostvandetail from './Host/Hostvandetail';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         <Route index element={<Dashboard />} />
         <Route path='Income' element={<Income />} />
         <Route path='reviews' element={<Reviews/>} />
+        <Route path='vans' element={<Hostvans/>} />
+        <Route path="vans/:id" element={<Hostvandetail />} />
         </Route>
 
         </Route>
