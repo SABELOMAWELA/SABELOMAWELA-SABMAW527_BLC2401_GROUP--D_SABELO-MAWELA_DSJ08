@@ -23,6 +23,7 @@ function App() {
      
       <Routes>
         <Route element={<Layout />}>
+        <Route path="*" element={<h1>Page not found!</h1>} />
         <Route path="vans">
         <Route index element={<Vans />}/>
         <Route path='/vans/:id' element={<Vandetail />}/>
