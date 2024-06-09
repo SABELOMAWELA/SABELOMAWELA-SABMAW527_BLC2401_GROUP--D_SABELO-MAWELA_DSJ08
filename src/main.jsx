@@ -16,6 +16,7 @@ import Hostvandetail from './Host/Hostvandetail';
 import HostVanInfo from "./Host/Hostvaninfo"
 import HostVanPhotos from "./Host/Hostvanphotos"
 import HostVanPricing from "./Host/Hostvanpricing"
+import NotFound from './Host/404Error';
 
 function App() {
     return (
@@ -23,7 +24,7 @@ function App() {
      
       <Routes>
         <Route element={<Layout />}>
-        <Route path="*" element={<h1>Page not found!</h1>} />
+        <Route path="*" element={<NotFound />}/>
         <Route path="vans">
         <Route index element={<Vans />}/>
         <Route path='/vans/:id' element={<Vandetail />}/>
