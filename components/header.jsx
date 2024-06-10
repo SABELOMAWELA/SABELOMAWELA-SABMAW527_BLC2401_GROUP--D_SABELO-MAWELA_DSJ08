@@ -7,7 +7,10 @@ export default function Header() {
     fontWeight: "bold",
     textDecoration:"none" ,
     color: '#161616',
-  };
+  }
+  function fakeLogOut() {
+    localStorage.removeItem("loggedin")
+}
 return (
 <header>
         <Link className="site-logo" to="/">#VanLife</Link>
@@ -16,6 +19,7 @@ return (
           <NavLink to="/about" className={({isActive}) => isActive ? activeStyles :null }>About</NavLink>
           <NavLink to="/vans" className={({isActive}) => isActive ? activeStyles :null }>Vans</NavLink>
           <Link to="login" className="login-link"> <img src="../assets/images/avatar-icon.png" className="login-icon" /></Link>
+          <button onClick={fakeLogOut}>X</button>
         </nav>
       </header>)
       
